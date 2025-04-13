@@ -1,0 +1,596 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.f_food"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:6:5-80
+12-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:7:5-79
+13-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:8:5-81
+14-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+15-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:9:5-85
+15-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:9:22-82
+16
+17    <uses-feature android:name="android.hardware.location.gps" />
+17-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:11:5-66
+17-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:11:19-63
+18    <uses-feature android:name="android.hardware.location.network" />
+18-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:12:5-70
+18-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:12:19-67
+19
+20    <!-- Include required permissions for Google Maps API to run. -->
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+22
+23    <uses-feature
+23-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+24        android:glEsVersion="0x00020000"
+24-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+25        android:required="true" />
+25-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+26
+27    <queries>
+27-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+28
+29        <!-- Needs to be explicitly declared on Android R+ -->
+30        <package android:name="com.google.android.apps.maps" />
+30-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+30-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+31    </queries>
+32
+33    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+33-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\dd77999a10acd97aac2f5fac7b0bea2f\transformed\firebase-iid-21.1.0\AndroidManifest.xml:24:5-68
+33-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\dd77999a10acd97aac2f5fac7b0bea2f\transformed\firebase-iid-21.1.0\AndroidManifest.xml:24:22-65
+34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+34-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\dd77999a10acd97aac2f5fac7b0bea2f\transformed\firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
+34-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\dd77999a10acd97aac2f5fac7b0bea2f\transformed\firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
+35
+36    <permission
+36-->[androidx.core:core:1.13.0] C:\Users\TTT\.gradle\caches\8.9\transforms\079249cd191e205cc7fcf18fc3302b3e\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+37        android:name="com.example.f_food.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+37-->[androidx.core:core:1.13.0] C:\Users\TTT\.gradle\caches\8.9\transforms\079249cd191e205cc7fcf18fc3302b3e\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+38        android:protectionLevel="signature" />
+38-->[androidx.core:core:1.13.0] C:\Users\TTT\.gradle\caches\8.9\transforms\079249cd191e205cc7fcf18fc3302b3e\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+39
+40    <uses-permission android:name="com.example.f_food.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+40-->[androidx.core:core:1.13.0] C:\Users\TTT\.gradle\caches\8.9\transforms\079249cd191e205cc7fcf18fc3302b3e\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+40-->[androidx.core:core:1.13.0] C:\Users\TTT\.gradle\caches\8.9\transforms\079249cd191e205cc7fcf18fc3302b3e\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+41
+42    <application
+42-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:14:5-192:19
+43        android:allowBackup="true"
+43-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:15:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.13.0] C:\Users\TTT\.gradle\caches\8.9\transforms\079249cd191e205cc7fcf18fc3302b3e\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+45        android:dataExtractionRules="@xml/data_extraction_rules"
+45-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:16:9-65
+46        android:debuggable="true"
+47        android:extractNativeLibs="false"
+48        android:fullBackupContent="@xml/backup_rules"
+48-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:17:9-54
+49        android:icon="@mipmap/ic_launcher"
+49-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:18:9-43
+50        android:label="@string/app_name"
+50-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:19:9-41
+51        android:requestLegacyExternalStorage="true"
+51-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:20:9-52
+52        android:roundIcon="@mipmap/ic_launcher_round"
+52-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:21:9-54
+53        android:supportsRtl="true"
+53-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:22:9-35
+54        android:testOnly="true"
+55        android:theme="@style/Theme.F_Food" >
+55-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:23:9-44
+56        <activity
+56-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:25:9-28:47
+57            android:name="com.example.f_food.screen.admin_management.Update_Policy"
+57-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:26:13-66
+58            android:exported="true"
+58-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:27:13-36
+59            android:theme="@style/Apptheme" />
+59-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:28:13-44
+60        <activity
+60-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:29:7-31:39
+61            android:name="com.example.f_food.screen.features_restaurant_management.HomeRestaurant"
+61-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:30:13-81
+62            android:exported="true" />
+62-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:31:13-36
+63        <activity
+63-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:32:9-34:39
+64            android:name="com.example.f_food.screen.features_customer.ChangePassword"
+64-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:33:13-68
+65            android:exported="true" />
+65-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:34:13-36
+66        <activity android:name="com.example.f_food.screen.features_restaurant_management.OrderDetailActivity" />
+66-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:35:9-95
+66-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:35:19-92
+67        <activity
+67-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:36:9-39:47
+68            android:name="com.example.f_food.screen.authentication_authorization.ForgotPassActivity"
+68-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:37:13-83
+69            android:exported="true"
+69-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:38:13-36
+70            android:theme="@style/Apptheme" />
+70-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:39:13-44
+71        <activity
+71-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:40:9-42:40
+72            android:name="com.example.f_food.screen.order_processing.DeliveryDetails"
+72-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:41:13-68
+73            android:exported="false" />
+73-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:42:13-37
+74        <activity
+74-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:43:9-45:40
+75            android:name="com.example.f_food.screen.features_customer.HomeStart"
+75-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:44:13-63
+76            android:exported="false" />
+76-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:45:13-37
+77        <activity
+77-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:46:9-48:39
+78            android:name="com.example.f_food.screen.features_customer.Address"
+78-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:47:13-61
+79            android:exported="true" />
+79-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:48:13-36
+80        <activity
+80-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:49:9-51:39
+81            android:name="com.example.f_food.screen.features_customer.GoogleMaps"
+81-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:50:13-64
+82            android:exported="true" />
+82-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:51:13-36
+83        <activity
+83-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:52:9-55:57
+84            android:name="com.example.f_food.screen.order_processing.OrderAccepted"
+84-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:53:13-66
+85            android:exported="true"
+85-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:54:13-36
+86            android:windowSoftInputMode="stateHidden" />
+86-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:55:13-54
+87
+88        <meta-data
+88-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:57:9-59:55
+89            android:name="com.google.android.geo.API_KEY"
+89-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:58:13-58
+90            android:value="@string/google_maps_key" />
+90-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:59:13-52
+91
+92        <activity
+92-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:61:9-63:39
+93            android:name="com.example.f_food.screen.features_restaurant_management.AddFoodActivity"
+93-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:62:13-82
+94            android:exported="true" />
+94-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:63:13-36
+95        <activity
+95-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:64:9-66:39
+96            android:name="com.example.f_food.screen.features_customer.activity_checkout"
+96-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:65:13-71
+97            android:exported="true" />
+97-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:66:13-36
+98        <activity
+98-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:67:9-69:39
+99            android:name="com.example.f_food.screen.features_customer.activity_cart"
+99-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:68:13-67
+100            android:exported="true" />
+100-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:69:13-36
+101        <activity
+101-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:70:9-72:40
+102            android:name="com.example.f_food.screen.features_customer.OrderHistoryDetail"
+102-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:71:13-72
+103            android:exported="false" />
+103-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:72:13-37
+104        <activity
+104-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:73:9-75:40
+105            android:name="com.example.f_food.screen.authentication_authorization.ShipperSignUp"
+105-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:74:13-78
+106            android:exported="false" />
+106-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:75:13-37
+107        <activity
+107-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:76:9-78:39
+108            android:name="com.example.f_food.screen.authentication_authorization.ShipperLogin"
+108-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:77:13-77
+109            android:exported="true" />
+109-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:78:13-36
+110        <activity
+110-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:79:9-81:39
+111            android:name="com.example.f_food.screen.order_processing.DeliveryStatusUpdate"
+111-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:80:13-73
+112            android:exported="true" />
+112-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:81:13-36
+113        <activity
+113-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:82:9-84:39
+114            android:name="com.example.f_food.screen.features_restaurant_management.UpdateFood"
+114-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:83:13-77
+115            android:exported="true" />
+115-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:84:13-36
+116        <activity
+116-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:85:9-87:39
+117            android:name="com.example.f_food.screen.features_restaurant_management.ManageFoodDetail"
+117-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:86:13-83
+118            android:exported="true" />
+118-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:87:13-36
+119        <activity
+119-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:88:9-90:39
+120            android:name="com.example.f_food.screen.features_customer.CustomerProfile"
+120-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:89:13-69
+121            android:exported="true" />
+121-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:90:13-36
+122        <activity
+122-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:91:9-93:39
+123            android:name="com.example.f_food.screen.features_restaurant_management.RestaurantNotifications"
+123-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:92:13-90
+124            android:exported="true" />
+124-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:93:13-36
+125        <activity
+125-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:94:9-96:39
+126            android:name="com.example.f_food.screen.features_restaurant_management.RestaurantSalesReport"
+126-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:95:13-88
+127            android:exported="true" />
+127-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:96:13-36
+128        <activity
+128-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:97:9-99:39
+129            android:name="com.example.f_food.screen.features_restaurant_management.RestaurantOrders"
+129-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:98:13-83
+130            android:exported="true" />
+130-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:99:13-36
+131        <activity
+131-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:100:9-102:39
+132            android:name="com.example.f_food.screen.features_restaurant_management.MenuManagement"
+132-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:101:13-81
+133            android:exported="true" />
+133-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:102:13-36
+134        <activity
+134-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:103:9-105:39
+135            android:name="com.example.f_food.screen.features_restaurant_management.CustomerSupport"
+135-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:104:13-82
+136            android:exported="true" />
+136-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:105:13-36
+137        <activity
+137-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:106:9-108:39
+138            android:name="com.example.f_food.screen.order_processing.AcceptShippingOrder"
+138-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:107:13-72
+139            android:exported="true" />
+139-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:108:13-36
+140        <activity
+140-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:109:9-112:57
+141            android:name="com.example.f_food.screen.order_processing.DeliveryHistory"
+141-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:110:13-68
+142            android:exported="true"
+142-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:111:13-36
+143            android:windowSoftInputMode="stateHidden" />
+143-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:112:13-54
+144        <activity
+144-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:113:9-115:39
+145            android:name="com.example.f_food.screen.order_processing.PendingOrder"
+145-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:114:13-65
+146            android:exported="true" />
+146-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:115:13-36
+147        <activity
+147-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:116:9-118:39
+148            android:name="com.example.f_food.screen.features_customer.FoodDetailActivity"
+148-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:117:13-72
+149            android:exported="true" />
+149-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:118:13-36
+150        <activity
+150-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:119:9-121:39
+151            android:name="com.example.f_food.screen.authentication_authorization.RestaurantLogIn"
+151-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:120:13-80
+152            android:exported="true" />
+152-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:121:13-36
+153        <activity
+153-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:122:9-124:39
+154            android:name="com.example.f_food.screen.authentication_authorization.RestaurantSignUp"
+154-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:123:13-81
+155            android:exported="true" />
+155-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:124:13-36
+156        <activity
+156-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:125:9-127:39
+157            android:name="com.example.f_food.screen.authentication_authorization.SignUp"
+157-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:126:13-71
+158            android:exported="true" />
+158-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:127:13-36
+159        <activity
+159-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:128:9-130:39
+160            android:name="com.example.f_food.screen.features_customer.ManageAddress"
+160-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:129:13-67
+161            android:exported="true" />
+161-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:130:13-36
+162        <activity
+162-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:131:9-133:39
+163            android:name="com.example.f_food.screen.features_customer.ReviewAndRating"
+163-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:132:13-69
+164            android:exported="true" />
+164-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:133:13-36
+165        <activity
+165-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:134:9-136:39
+166            android:name="com.example.f_food.screen.features_customer.OrderTracking"
+166-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:135:13-67
+167            android:exported="true" />
+167-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:136:13-36
+168        <activity
+168-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:137:9-139:39
+169            android:name="com.example.f_food.screen.features_customer.OrderHistory"
+169-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:138:13-66
+170            android:exported="true" />
+170-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:139:13-36
+171        <activity
+171-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:140:9-142:39
+172            android:name="com.example.f_food.screen.authentication_authorization.LoginActivity"
+172-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:141:13-78
+173            android:exported="true" />
+173-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:142:13-36
+174        <activity
+174-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:143:9-145:39
+175            android:name="com.example.f_food.screen.features_customer.ViewRestaurantList"
+175-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:144:13-72
+176            android:exported="true" />
+176-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:145:13-36
+177        <activity
+177-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:146:9-149:47
+178            android:name="com.example.f_food.screen.admin_management.Restaurant_Management"
+178-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:147:13-74
+179            android:exported="true"
+179-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:148:13-36
+180            android:theme="@style/Apptheme" />
+180-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:149:13-44
+181        <activity
+181-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:150:9-153:47
+182            android:name="com.example.f_food.screen.admin_management.Customer_Management"
+182-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:151:13-72
+183            android:exported="true"
+183-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:152:13-36
+184            android:theme="@style/Apptheme" />
+184-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:153:13-44
+185        <activity
+185-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:154:9-156:39
+186            android:name="com.example.f_food.screen.admin_management.Payment_Transactions_Management"
+186-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:155:13-84
+187            android:exported="true" />
+187-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:156:13-36
+188        <activity
+188-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:157:9-160:47
+189            android:name="com.example.f_food.screen.admin_management.Policy_Management"
+189-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:158:13-70
+190            android:exported="true"
+190-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:159:13-36
+191            android:theme="@style/Apptheme" />
+191-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:160:13-44
+192        <activity
+192-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:161:9-164:47
+193            android:name="com.example.f_food.screen.admin_management.Shipper_Management"
+193-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:162:13-71
+194            android:exported="true"
+194-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:163:13-36
+195            android:theme="@style/Apptheme" />
+195-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:164:13-44
+196        <activity
+196-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:165:9-168:47
+197            android:name="com.example.f_food.screen.admin_management.AdminScreen"
+197-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:166:13-64
+198            android:exported="true"
+198-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:167:13-36
+199            android:theme="@style/Apptheme" />
+199-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:168:13-44
+200        <activity
+200-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:169:9-171:39
+201            android:name="com.example.f_food.screen.features_customer.ProductListRestaurant"
+201-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:170:13-75
+202            android:exported="true" />
+202-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:171:13-36
+203        <activity
+203-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:172:9-175:47
+204            android:name="com.example.f_food.screen.admin_management.AddPolicy"
+204-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:173:13-62
+205            android:exported="true"
+205-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:174:13-36
+206            android:theme="@style/Apptheme" />
+206-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:175:13-44
+207        <activity
+207-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:176:9-184:20
+208            android:name="com.example.f_food.MainActivity"
+208-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:177:13-41
+209            android:exported="true" >
+209-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:178:13-36
+210            <intent-filter>
+210-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:179:13-183:29
+211                <action android:name="android.intent.action.MAIN" />
+211-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:180:17-69
+211-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:180:25-66
+212
+213                <category android:name="android.intent.category.LAUNCHER" />
+213-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:182:17-77
+213-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:182:27-74
+214            </intent-filter>
+215        </activity>
+216
+217        <meta-data
+217-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:186:9-188:36
+218            android:name="firebase_messaging_auto_init_enabled"
+218-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:187:13-64
+219            android:value="true" />
+219-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:188:13-33
+220        <meta-data
+220-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:189:9-191:36
+221            android:name="firebase_analytics_collection_enabled"
+221-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:190:13-65
+222            android:value="true" />
+222-->D:\hoctapky8\PRM392\ProjectFoodOrder\Update\F_Food\app\src\main\AndroidManifest.xml:191:13-33
+223        <!-- Needs to be explicitly declared on P+ -->
+224        <uses-library
+224-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+225            android:name="org.apache.http.legacy"
+225-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+226            android:required="false" />
+226-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\bc9f843ffe7bd7c80ed2df43b31d9288\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+227
+228        <service
+228-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\TTT\.gradle\caches\8.9\transforms\accdb2116bee660a73b8a97db86aebfa\transformed\firebase-functions-21.2.0\AndroidManifest.xml:12:9-21:19
+229            android:name="com.google.firebase.components.ComponentDiscoveryService"
+229-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\TTT\.gradle\caches\8.9\transforms\accdb2116bee660a73b8a97db86aebfa\transformed\firebase-functions-21.2.0\AndroidManifest.xml:13:13-84
+230            android:directBootAware="true"
+230-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+231            android:exported="false" >
+231-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\TTT\.gradle\caches\8.9\transforms\accdb2116bee660a73b8a97db86aebfa\transformed\firebase-functions-21.2.0\AndroidManifest.xml:14:13-37
+232            <meta-data
+232-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\TTT\.gradle\caches\8.9\transforms\accdb2116bee660a73b8a97db86aebfa\transformed\firebase-functions-21.2.0\AndroidManifest.xml:15:13-17:85
+233                android:name="com.google.firebase.components:com.google.firebase.functions.FirebaseFunctionsKtxRegistrar"
+233-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\TTT\.gradle\caches\8.9\transforms\accdb2116bee660a73b8a97db86aebfa\transformed\firebase-functions-21.2.0\AndroidManifest.xml:16:17-122
+234                android:value="com.google.firebase.components.ComponentRegistrar" />
+234-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\TTT\.gradle\caches\8.9\transforms\accdb2116bee660a73b8a97db86aebfa\transformed\firebase-functions-21.2.0\AndroidManifest.xml:17:17-82
+235            <meta-data
+235-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\TTT\.gradle\caches\8.9\transforms\accdb2116bee660a73b8a97db86aebfa\transformed\firebase-functions-21.2.0\AndroidManifest.xml:18:13-20:85
+236                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+236-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\TTT\.gradle\caches\8.9\transforms\accdb2116bee660a73b8a97db86aebfa\transformed\firebase-functions-21.2.0\AndroidManifest.xml:19:17-111
+237                android:value="com.google.firebase.components.ComponentRegistrar" />
+237-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\TTT\.gradle\caches\8.9\transforms\accdb2116bee660a73b8a97db86aebfa\transformed\firebase-functions-21.2.0\AndroidManifest.xml:20:17-82
+238            <meta-data
+238-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\3e912cf162608a849556843cbb97042c\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+239                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+239-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\3e912cf162608a849556843cbb97042c\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+240                android:value="com.google.firebase.components.ComponentRegistrar" />
+240-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\3e912cf162608a849556843cbb97042c\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+241            <meta-data
+241-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+242                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+242-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+243                android:value="com.google.firebase.components.ComponentRegistrar" />
+243-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+244            <meta-data
+244-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\dd77999a10acd97aac2f5fac7b0bea2f\transformed\firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+245                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+245-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\dd77999a10acd97aac2f5fac7b0bea2f\transformed\firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+246                android:value="com.google.firebase.components.ComponentRegistrar" />
+246-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\dd77999a10acd97aac2f5fac7b0bea2f\transformed\firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+247            <meta-data
+247-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\TTT\.gradle\caches\8.9\transforms\a2c8cf92b68fb75f769f79c047c9c700\transformed\firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+248                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+248-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\TTT\.gradle\caches\8.9\transforms\a2c8cf92b68fb75f769f79c047c9c700\transformed\firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+249                android:value="com.google.firebase.components.ComponentRegistrar" />
+249-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\TTT\.gradle\caches\8.9\transforms\a2c8cf92b68fb75f769f79c047c9c700\transformed\firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+250        </service>
+251
+252        <activity
+252-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\23fd855edd470be48e39aa35c648b47d\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+253            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+253-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\23fd855edd470be48e39aa35c648b47d\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+254            android:exported="false"
+254-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\23fd855edd470be48e39aa35c648b47d\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+255            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+255-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\TTT\.gradle\caches\8.9\transforms\23fd855edd470be48e39aa35c648b47d\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+256
+257        <provider
+257-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+258            android:name="com.google.firebase.provider.FirebaseInitProvider"
+258-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+259            android:authorities="com.example.f_food.firebaseinitprovider"
+259-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+260            android:directBootAware="true"
+260-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+261            android:exported="false"
+261-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+262            android:initOrder="100" />
+262-->[com.google.firebase:firebase-common:21.0.0] C:\Users\TTT\.gradle\caches\8.9\transforms\4b77a6ea67637057afb944f2ea3786bd\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+263        <provider
+263-->[androidx.emoji2:emoji2:1.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\f800fd34093be9e5c735bfc85fb6dce1\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+264            android:name="androidx.startup.InitializationProvider"
+264-->[androidx.emoji2:emoji2:1.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\f800fd34093be9e5c735bfc85fb6dce1\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+265            android:authorities="com.example.f_food.androidx-startup"
+265-->[androidx.emoji2:emoji2:1.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\f800fd34093be9e5c735bfc85fb6dce1\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+266            android:exported="false" >
+266-->[androidx.emoji2:emoji2:1.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\f800fd34093be9e5c735bfc85fb6dce1\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+267            <meta-data
+267-->[androidx.emoji2:emoji2:1.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\f800fd34093be9e5c735bfc85fb6dce1\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+268                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+268-->[androidx.emoji2:emoji2:1.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\f800fd34093be9e5c735bfc85fb6dce1\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+269                android:value="androidx.startup" />
+269-->[androidx.emoji2:emoji2:1.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\f800fd34093be9e5c735bfc85fb6dce1\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+270            <meta-data
+270-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\TTT\.gradle\caches\8.9\transforms\e13fb6e9ddb70f3042625ee2097f3e04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+271                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+271-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\TTT\.gradle\caches\8.9\transforms\e13fb6e9ddb70f3042625ee2097f3e04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+272                android:value="androidx.startup" />
+272-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\TTT\.gradle\caches\8.9\transforms\e13fb6e9ddb70f3042625ee2097f3e04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+273            <meta-data
+273-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+274                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+274-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+275                android:value="androidx.startup" />
+275-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+276        </provider>
+277
+278        <meta-data
+278-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\fdc37bfcc2b57841c0068d8fed75a408\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+279            android:name="com.google.android.gms.version"
+279-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\fdc37bfcc2b57841c0068d8fed75a408\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+280            android:value="@integer/google_play_services_version" />
+280-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\TTT\.gradle\caches\8.9\transforms\fdc37bfcc2b57841c0068d8fed75a408\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+281
+282        <service
+282-->[androidx.room:room-runtime:2.6.1] C:\Users\TTT\.gradle\caches\8.9\transforms\5f144535dcfe8b8e8fae535d0f0937e5\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+283            android:name="androidx.room.MultiInstanceInvalidationService"
+283-->[androidx.room:room-runtime:2.6.1] C:\Users\TTT\.gradle\caches\8.9\transforms\5f144535dcfe8b8e8fae535d0f0937e5\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+284            android:directBootAware="true"
+284-->[androidx.room:room-runtime:2.6.1] C:\Users\TTT\.gradle\caches\8.9\transforms\5f144535dcfe8b8e8fae535d0f0937e5\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+285            android:exported="false" />
+285-->[androidx.room:room-runtime:2.6.1] C:\Users\TTT\.gradle\caches\8.9\transforms\5f144535dcfe8b8e8fae535d0f0937e5\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+286
+287        <provider
+287-->[com.squareup.picasso:picasso:2.71828] C:\Users\TTT\.gradle\caches\8.9\transforms\1cbe693bd6c8c9974b371d8b6210e89d\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+288            android:name="com.squareup.picasso.PicassoProvider"
+288-->[com.squareup.picasso:picasso:2.71828] C:\Users\TTT\.gradle\caches\8.9\transforms\1cbe693bd6c8c9974b371d8b6210e89d\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
+289            android:authorities="com.example.f_food.com.squareup.picasso"
+289-->[com.squareup.picasso:picasso:2.71828] C:\Users\TTT\.gradle\caches\8.9\transforms\1cbe693bd6c8c9974b371d8b6210e89d\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
+290            android:exported="false" />
+290-->[com.squareup.picasso:picasso:2.71828] C:\Users\TTT\.gradle\caches\8.9\transforms\1cbe693bd6c8c9974b371d8b6210e89d\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
+291
+292        <receiver
+292-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+293            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+293-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+294            android:directBootAware="false"
+294-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+295            android:enabled="true"
+295-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+296            android:exported="true"
+296-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+297            android:permission="android.permission.DUMP" >
+297-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+298            <intent-filter>
+298-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+299                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+299-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+299-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+300            </intent-filter>
+301            <intent-filter>
+301-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+302                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+302-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+302-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+303            </intent-filter>
+304            <intent-filter>
+304-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+305                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+305-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+305-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+306            </intent-filter>
+307            <intent-filter>
+307-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+308                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+308-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+308-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\TTT\.gradle\caches\8.9\transforms\be870de6c481c2945326d61f5e9907b4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+309            </intent-filter>
+310        </receiver>
+311    </application>
+312
+313</manifest>

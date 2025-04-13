@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:id="@+id/manageAddress">
+
+    <!-- Header with Home Icon and Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <!-- Home Icon (aligned to the left) -->
+        <ImageButton
+            android:id="@+id/homeIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_home"
+            android:contentDescription="Home Icon"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Title (Địa chỉ mới, centered) -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Địa chỉ mới"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+
+    <!-- Nhập địa chỉ (Tỉnh/Thành phố, Quận/Huyện, Phường/Xã) -->
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tỉnh/Thành phố, Quận/Huyện, Phường/Xã"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Nhập địa chỉ chi tiết -->
+    <EditText
+        android:id="@+id/etDetailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên đường, Tòa nhà, Số nhà"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- CheckBox Đặt làm địa chỉ mặc định -->
+
+    <!-- Chọn loại địa chỉ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại địa chỉ:"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp" />
+
+    <RadioGroup
+        android:id="@+id/rgAddressType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="6dp">
+
+        <RadioButton
+            android:id="@+id/rbOffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Văn Phòng"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhà Riêng"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <!-- Nút Hoàn thành -->
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOÀN THÀNH"
+        android:background="@android:color/white"
+        android:textColor="@android:color/darker_gray"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:stateListAnimator="@null"/>
+</LinearLayout>
